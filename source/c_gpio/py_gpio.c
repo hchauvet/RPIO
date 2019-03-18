@@ -519,7 +519,7 @@ PyMODINIT_FUNC init_GPIO(void)
 
     // detect board revision and set up accordingly
     cache_rpi_revision();
-    printf("board revision %i\n", revision_int);
+    //printf("board revision %i\n", revision_int);
     switch (revision_int) {
     case 1:
         pin_to_gpio = &pin_to_gpio_rev1;
